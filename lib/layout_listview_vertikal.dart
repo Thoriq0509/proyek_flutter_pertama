@@ -6,12 +6,12 @@ class LayoutVertikal extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('ListView Vertikal')),
+      appBar: AppBar(title: Text('ListView')),
       body: ListView(
-        children: <Widget>[
-          ListTile(leading: Icon(Icons.map), title: Text('Map')),
+        children: [
+          ListTile(leading: Icon(Icons.camera ), title: Text('Camera')),
           ListTile(leading: Icon(Icons.photo_album), title: Text('Album')),
-          ListTile(leading: Icon(Icons.phone), title: Text('Phone')),
+          ListTile(leading: Icon(Icons.music_note), title: Text('music')),
         ]
       )
     );

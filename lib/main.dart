@@ -7,6 +7,9 @@ import 'package:proyek_flutter_pertama/layout_listview_vertikal.dart';
 import 'package:proyek_flutter_pertama/spaced_list2.dart';
 import 'package:proyek_flutter_pertama/long_list.dart';
 import 'package:proyek_flutter_pertama/combined_list.dart';
+import 'package:proyek_flutter_pertama/profil.dart';
+import 'package:proyek_flutter_pertama/column_row.dart';
+import 'package:proyek_flutter_pertama/listgrid_view.dart';
 
 
 void main() {
@@ -21,7 +24,7 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       title: 'Aplikasi Flutter Thoriq',
       debugShowCheckedModeBanner: false,
-      home: const SpacedAndLongList(),
+      home: const ListviewGrid(),
     );
   }
 }
