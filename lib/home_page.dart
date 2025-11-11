@@ -22,6 +22,10 @@ class HomePage extends StatelessWidget {
                 Navigator.push(context, MaterialPageRoute
                 (builder: (context) => HomePage2(nama: nama, umur: umur)));
               },
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.blue,
+                foregroundColor: Colors.white,
+              ),
               child: const Text("pindah ke halaman 2"),
             ),
             SizedBox(height: 10),
@@ -30,6 +34,10 @@ class HomePage extends StatelessWidget {
                 Navigator.push(context, MaterialPageRoute
                 (builder: (context) => const HomePage3()));
               },
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.blue,
+                foregroundColor: Colors.white,
+              ),
               child: const Text("pindah ke halaman 3"),
             ),
           ],

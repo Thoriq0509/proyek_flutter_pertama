@@ -18,6 +18,10 @@ class HomePage3 extends StatelessWidget {
               onPressed: () {
                 Navigator.pop(context);
               },
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.blue,
+                foregroundColor: Colors.white,
+              ),
               child: const Text("Kembali ke halaman sebelumnya"),
             ),
             SizedBox(height: 10),
@@ -26,6 +30,10 @@ class HomePage3 extends StatelessWidget {
                 Navigator.push(context, MaterialPageRoute
                 (builder: (context) => const HomePage()));
               },
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.blue,
+                foregroundColor: Colors.white,
+              ),
               child: const Text("pindah ke halaman 1"),
             ),
           ],
