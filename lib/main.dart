@@ -14,6 +14,7 @@ import 'package:proyek_flutter_pertama/home_page.dart';
 import 'package:proyek_flutter_pertama/home_page2.dart';
 import 'package:proyek_flutter_pertama/home_page3.dart';
 import 'package:proyek_flutter_pertama/counter.dart';
+import 'package:proyek_flutter_pertama/form_validation.dart';
 
 
 void main() {
@@ -28,7 +29,7 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       title: 'Aplikasi Flutter Thoriq',
       debugShowCheckedModeBanner: false,
-      home: const CounterPage(),
+      home: const FormValidation(),
     );
   }
 }
