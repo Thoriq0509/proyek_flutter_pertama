@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:proyek_flutter_pertama/home_page3.dart';
 
 class HomePage2 extends StatelessWidget {
-  const HomePage2({super.key});
+  final String nama;
+  final int umur;
+  const HomePage2({super.key, required this.nama, required this.umur});
 
   @override
   Widget build(BuildContext context) {
@@ -14,6 +16,10 @@ class HomePage2 extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Text('Selamat datang, $nama'),
+            SizedBox(height: 10),
+            Text('Umur saya, $umur tahun'),
+            SizedBox(height: 10),
             ElevatedButton(
               onPressed: () {
                 Navigator.pop(context);
