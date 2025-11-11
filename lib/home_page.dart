@@ -1,0 +1,38 @@
+import 'package:flutter/material.dart';
+import 'package:proyek_flutter_pertama/home_page2.dart';
+import 'package:proyek_flutter_pertama/home_page3.dart';
+
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Halaman 1'),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute
+                (builder: (context) => const HomePage2()));
+              },
+              child: const Text("pindah ke halaman 2"),
+            ),
+            SizedBox(height: 10),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute
+                (builder: (context) => const HomePage3()));
+              },
+              child: const Text("pindah ke halaman 3"),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
